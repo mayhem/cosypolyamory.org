@@ -1,0 +1,20 @@
+version: "3.3"
+
+services:
+
+  web:
+    build: .
+    image: cosypolyamory.org
+    expose:
+      - "3031"
+    volumes:
+      - .:/code/cosypolyamory.org:z
+    environment:
+      - VIRTUAL_HOST=cosypolyamory.org
+      - LETSENCRYPT_HOST=cosypolyamory.org
+      - LETSENCRYPT_EMAIL=mayhem@gmail.com
+
+networks:
+  default:
+    name: nginx-proxy
+    external: true

@@ -1,0 +1,15 @@
+body {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+html {
+  background: #FCFBFB;
+}
+
+.coming-soon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
