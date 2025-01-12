@@ -21,7 +21,7 @@ def index():
 
 @app.route('/conflict-resolution')
 def conflict():
-    return send_file("static/pdf/Cosy Polyamory Community - Code of Conduct.pdf")
+    return send_file("static/pdf/Cosy Polyamory Community - Conflict Resolution Protocol.pdf")
 
 @app.route('/code-of-conduct')
 def coc():
