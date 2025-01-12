@@ -4,7 +4,7 @@ import os
 import json
 import sys
 
-from flask import Flask, render_template, redirect, request, make_response
+from flask import Flask, render_template, send_file
 
 STATIC_PATH = "/static"
 STATIC_FOLDER = "static"
@@ -18,3 +18,11 @@ app = Flask(__name__,
 @app.route('/')
 def index():
     return render_template("/index.html")
+
+@app.route('/conflict-resolution')
+def index():
+    return send_file("static/static/pdf/Cosy\ Polyamory\ Community\ -\ Code\ of\ Conduct.pdf")
+
+@app.route('/code-of-conduct')
+def index():
+    return send_file("static/static/pdf/Cosy\ Polyamory\ Community\ -\ Code\ of\ Conduct.pdf")
