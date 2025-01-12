@@ -9,10 +9,10 @@ WORKDIR /code
 
 RUN pip3 install setuptools uwsgi
 
-RUN mkdir /code/storybird.cat
-WORKDIR /code/storybird.cat
+RUN mkdir /code/cosypolyamory.org
+WORKDIR /code/cosypolyamory.org
 
-COPY requirements.txt /code/storybird.cat/
+COPY requirements.txt /code/cosypolyamory.org/
 RUN pip3 install --no-cache-dir -r requirements.txt
 
 RUN apt-get purge -y build-essential && \
@@ -20,8 +20,8 @@ RUN apt-get purge -y build-essential && \
     apt-get clean -y
 
 # Now install our code, which may change frequently
-COPY . /code/storybird.cat/
+COPY . /code/cosypolyamory.org
 
 CMD uwsgi --gid=www-data --uid=www-data --http-socket :3031 \
-          --vhost --module=server --callable=app --chdir=/code/storybird.cat \
+          --vhost --module=server --callable=app --chdir=/code/cosypolyamory.org \
           --enable-threads --processes=15

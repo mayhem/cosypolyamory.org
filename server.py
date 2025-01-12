@@ -20,9 +20,9 @@ def index():
     return render_template("/index.html")
 
 @app.route('/conflict-resolution')
-def index():
-    return send_file("static/static/pdf/Cosy\ Polyamory\ Community\ -\ Code\ of\ Conduct.pdf")
+def conflict():
+    return send_file("static/pdf/Cosy Polyamory Community - Code of Conduct.pdf")
 
 @app.route('/code-of-conduct')
-def index():
-    return send_file("static/static/pdf/Cosy\ Polyamory\ Community\ -\ Code\ of\ Conduct.pdf")
+def coc():
+    return send_file("static/pdf/Cosy Polyamory Community - Code of Conduct.pdf")
