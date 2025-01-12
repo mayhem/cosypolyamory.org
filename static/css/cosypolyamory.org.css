@@ -1,8 +1,5 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
-}
-
-html {
   background: #FCFBFB;
 }
 
@@ -12,4 +9,21 @@ html {
   justify-content: center;
   align-items: flex-start;
   flex-wrap: nowrap;
+}
+
+h2 {
+    margin: 1.5em 0 1.5em 0 !important;
+}
+
+h3 {
+    margin: 1.3em 0 1.3em 0 !important;
+}
+
+h4 {
+    margin: 1.2em 0 1.2em 0 !important;
+}
+
+.logo {
+    text-align: center;
+    margin: 1.5em 0 0 0 !important;
 }
