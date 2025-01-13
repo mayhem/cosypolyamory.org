@@ -25,5 +25,31 @@ h4 {
 
 .logo {
     text-align: center;
-    margin: 1.5em 0 0 0 !important;
+    margin: 3.5em 0 0 0 !important;
+    max-width: 250px;
 }
+
+
+@media (min-width: 300px) {
+    .inner-margin {
+    }
+}
+
+@media (min-width: 576px) {
+    .inner-margin {
+        margin-left: 2em !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .inner-margin {
+        margin-left: 4em !important;
+    }
+}
+
+@media (min-width: 992px) {
+    .inner-margin {
+        margin-left: 6em !important;
+    }
+}
+
