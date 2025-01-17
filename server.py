@@ -19,6 +19,10 @@ app = Flask(__name__,
 def index():
     return render_template("/index.html")
 
+@app.route('/team')
+def team():
+    return render_template("/team.html")
+
 @app.route('/conflict-resolution')
 def conflict():
     return send_file("static/pdf/Cosy Polyamory Community - Conflict Resolution Protocol.pdf")
