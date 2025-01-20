@@ -27,6 +27,10 @@ def contact():
 def values():
     return render_template("/values.html")
 
+@app.route('/team')
+def team():
+    return render_template("/team.html")
+
 @app.route('/conflict-resolution')
 def conflict():
     return send_file("static/pdf/Cosy Polyamory Community - Conflict Resolution Protocol.pdf")
