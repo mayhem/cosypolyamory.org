@@ -11,8 +11,16 @@ body {
   flex-wrap: nowrap;
 }
 
-h2 {
+#header-title { 
+    font-size: 200%;
+}
+
+h1,h2 {
     margin: 1.5em 0 1.5em 0 !important;
+}
+
+.header-paragraph {
+  font-size: 150%;
 }
 
 h3 {
