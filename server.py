@@ -15,6 +15,9 @@ app = Flask(__name__,
             static_folder = STATIC_FOLDER,
             template_folder = TEMPLATE_FOLDER)
 
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+
 @app.route('/')
 def index():
     return render_template("/index.html")
