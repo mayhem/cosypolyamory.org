@@ -19,6 +19,14 @@ app = Flask(__name__,
 def index():
     return render_template("/index.html")
 
+@app.route('/contact')
+def contact():
+    return render_template("/contact.html")
+
+@app.route('/values')
+def values():
+    return render_template("/values.html")
+
 @app.route('/team')
 def team():
     return render_template("/team.html")
