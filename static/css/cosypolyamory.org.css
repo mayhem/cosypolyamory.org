@@ -61,3 +61,12 @@ h4 {
     }
 }
 
+.navbar-color {
+    background-color: #5d0096;
+    border-radius: 0px 0px 10px 10px;
+    font-weight: bold;
+}
+
+.nav-link-col {
+    color: #fefefe !important;
+}
