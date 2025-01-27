@@ -20,19 +20,23 @@ app = Flask(__name__,
 
 @app.route('/')
 def index():
-    return render_template("/index.html")
+    return render_template("/index.html", page="home")
 
 @app.route('/contact')
 def contact():
-    return render_template("/contact.html")
+    return render_template("/contact.html", page="contact")
 
 @app.route('/values')
 def values():
-    return render_template("/values.html")
+    return render_template("/values.html", page="values")
+
+@app.route('/structure')
+def rules():
+    return render_template("/structure.html", page="docs")
 
 @app.route('/governance')
 def governance():
-    return render_template("/governance.html")
+    return render_template("/governance.html", page="docs")
 
 @app.route('/conflict-resolution')
 def conflict():
