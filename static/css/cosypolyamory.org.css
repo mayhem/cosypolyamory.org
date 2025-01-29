@@ -22,6 +22,12 @@ body {
     margin-bottom: 0;
 }
 
+.logo {
+    text-align: center;
+    margin: 1.5em 0 0 0;
+    max-width: 250px;
+}
+
 h1,h2 {
     margin: 1.5em 0 1.5em 0;
 }
@@ -36,12 +42,6 @@ h3 {
 
 h4 {
     margin: 1.2em 0 1.2em 0 !important;
-}
-
-.logo {
-    text-align: center;
-    margin: 3.5em 0 0 0;
-    max-width: 250px;
 }
 
 
