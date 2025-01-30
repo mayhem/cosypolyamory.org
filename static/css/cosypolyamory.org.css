@@ -37,35 +37,11 @@ h1,h2 {
 }
 
 h3 {
-    margin: 1.3em 0 1.3em 0 !important;
+    /*margin: 1.3em 0 1.3em 0 !important;*/
 }
 
 h4 {
     margin: 1.2em 0 1.2em 0 !important;
-}
-
-
-@media (min-width: 300px) {
-    .inner-margin {
-    }
-}
-
-@media (min-width: 576px) {
-    .inner-margin {
-        margin-left: 2em !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .inner-margin {
-        margin-left: 4em !important;
-    }
-}
-
-@media (min-width: 992px) {
-    .inner-margin {
-        margin-left: 6em !important;
-    }
 }
 
 .navbar-color {
