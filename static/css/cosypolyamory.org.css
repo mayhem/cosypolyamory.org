@@ -59,3 +59,7 @@ h4 {
 #governance {
   display: block;
 }
+
+#team-table th, #team-table td {
+  background: transparent;
+}
