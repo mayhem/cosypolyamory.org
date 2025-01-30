@@ -22,13 +22,13 @@
 
     <title>Cosy Polyamory: {% block title %}{% endblock %}</title>
   </head>
-  <body class="vh-100">
-      <div class="container-md">
-          {% include 'navbar.html' %}
-          {% block content %}
-          {% endblock %}
-      </div>
-  
+  <body>
+    <div class="container-md">
+      {% include 'navbar.html' %}
+      {% block content %}
+      {% endblock %}
+    </div>
+
     {% block scripts %}
     {% endblock %}
   </body>
