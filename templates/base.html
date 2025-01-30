@@ -25,8 +25,10 @@
   <body>
     <div class="container-md">
       {% include 'navbar.html' %}
-      {% block content %}
-      {% endblock %}
+      <div class="col-md-8 mx-auto" id="content">
+        {% block content %}
+        {% endblock %}
+      </div>
     </div>
 
     {% block scripts %}
