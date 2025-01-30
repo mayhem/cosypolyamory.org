@@ -2,91 +2,84 @@
 {%- block title -%}home{% endblock %}
 {%- block content -%}
 
-<div class="h-100">
 <div class="row">
-    <div class="col">
-        <div class="row">
-            <div class="col inner-margin">
-              <div id="documents">
-                <h1 class="header-paragraph">Documents</h1>
-                <p>
-                    In order to have a healthy community, we need some fundamental rules of how the community should work:
-                </p>
+  <div class="col-xxl-5" id="side content">
+    <div class="col-md-9" id="documents">
+      <h1 class="header-paragraph">Documents</h1>
+      <p>
+          In order to have a healthy community, we need some fundamental rules of how the community should work:
+      </p>
 
-                <ul>
-                  <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                  <li><a href="/conflict-resolution">Conflict Resolution Protocol</a></li>
-                </ul>
-              </div>
-              <div id="governance">
-                <h2 class="header-paragraph">Our structure / governance</h2>
-                <p>
-                    If you would like to dive deeper into how we are organized and what rules we have in place for
-                    keeping our community Cosy, please see our <a href="/governance">goverance</a> page.
-                </p>
-              </div>
-              <div id="team">
-                <h2 class="header-paragraph">Our Team</h2>
-
-                <p>
-                    Our current team members are:
-                </p>
-
-                <table class="table">
-                <tr>
-                    <th>Position</td>
-                    <th>Person</td>
-                    <th>Telegram Handle</td>
-                </tr>
-                <tr>
-                    <td>Community Leader</td>
-                    <td>Manuel S</td>
-                    <td>@Salomanuel</td>
-                </tr>
-                <tr>
-                    <td>Events Team Leader</td>
-                    <td>Kirsten T</td>
-                    <td>@damselfish</td>
-                </tr>
-                <tr>
-                    <td>Events Team</td>
-                    <td>Anna S</td>
-                    <td>@annoushka_bcn</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Manuel S</td>
-                    <td>@Salomanuel</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Robert K</td>
-                    <td>@mayhemchaos</td>
-                </tr>
-                <tr>
-                    <td>Information Team</td>
-                    <td>Manuel S</td>
-                    <td>@Salomanuel</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Robert K</td>
-                    <td>@mayhemchaos</td>
-                </tr>
-                </table>
-              </div>
-              <div id="contact">
-                <p>
-                    If you have any questions or comments about our community, please <a href="/contact">contact us</a>.
-                </p>
-              </div>
-            </div>
-            <div class="col logo" style="max-width: 250px;">
-                <img src="/static/img/cosypolyamory.org.svg" alt="Cosy Polyamory Hearth-plus-Infinite-shaped Logo" width=75%>
-            </div>
-        </div>
+      <ul>
+        <li><a href="/code-of-conduct">Code of Conduct</a></li>
+        <li><a href="/conflict-resolution">Conflict Resolution Protocol</a></li>
+      </ul>
     </div>
+    <div class="col-md-9" id="governance">
+      <h2 class="header-paragraph">Our structure / governance</h2>
+      <p>
+          If you would like to dive deeper into how we are organized and what rules we have in place for
+          keeping our community Cosy, please see our <a href="/governance">governance</a> page.
+      </p>
+    </div>
+  </div>
+  <div class="col-xxl-7" id="team">
+    <h2 class="header-paragraph">Our Team</h2>
+
+    <p>
+        Our current team members are:
+    </p>
+
+    <table class="table table-hover table-sm" id="team-table">
+      <thead>
+        <tr>
+            <th>Position</td>
+            <th>Person</td>
+            <th>Telegram Handle</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>Community Leader</td>
+            <td>Manuel S</td>
+            <td>@Salomanuel</td>
+        </tr>
+        <tr>
+            <td>Events Team Leader</td>
+            <td>Kirsten T</td>
+            <td>@damselfish</td>
+        </tr>
+        <tr>
+            <td>Events Team</td>
+            <td>Anna S</td>
+            <td>@annoushka_bcn</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Manuel S</td>
+            <td>@Salomanuel</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Robert K</td>
+            <td>@mayhemchaos</td>
+        </tr>
+        <tr>
+            <td>Information Team</td>
+            <td>Manuel S</td>
+            <td>@Salomanuel</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Robert K</td>
+            <td>@mayhemchaos</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
+<div class="col" id="back-to-home">
+  [ <a href="/">back to home page</a> ] 
 </div>
 
 {% endblock%}

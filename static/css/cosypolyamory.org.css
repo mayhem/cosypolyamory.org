@@ -12,11 +12,24 @@ body {
 }
 
 #header-title { 
-    font-size: 200%;
+    text-align: center;
+    margin-top: 0;
+}
+
+#header-pre-title {
+    font-size: 150%;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.logo {
+    text-align: center;
+    margin: 1.5em 0 0 0;
+    max-width: 250px;
 }
 
 h1,h2 {
-    margin: 1.5em 0 1.5em 0 !important;
+    margin: 1.5em 0 1.5em 0;
 }
 
 .header-paragraph {
@@ -31,38 +44,22 @@ h4 {
     margin: 1.2em 0 1.2em 0 !important;
 }
 
-.logo {
-    text-align: center;
-    margin: 3.5em 0 0 0 !important;
-    max-width: 250px;
-}
-
-
-@media (min-width: 300px) {
-    .inner-margin {
-    }
-}
-
-@media (min-width: 576px) {
-    .inner-margin {
-        margin-left: 2em !important;
-    }
-}
-
-@media (min-width: 768px) {
-    .inner-margin {
-        margin-left: 4em !important;
-    }
-}
-
-@media (min-width: 992px) {
-    .inner-margin {
-        margin-left: 6em !important;
-    }
-}
-
 .navbar-color {
     background-color: #5d0096;
     border-radius: 0px 0px 10px 10px;
     font-weight: bold;
+}
+
+.navbar-brand img {
+  position: relative;
+  bottom: 20%;
+  width: 26px;
+}
+
+#governance {
+  display: block;
+}
+
+#team-table th, #team-table td {
+  background: transparent;
 }
