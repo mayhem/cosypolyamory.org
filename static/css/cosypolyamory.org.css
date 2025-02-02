@@ -56,10 +56,12 @@ h4 {
   width: 26px;
 }
 
-#governance {
-  display: block;
-}
-
 #team-table th, #team-table td {
   background: transparent;
+}
+
+.back-to-top {
+  text-decoration: none;
+  font-size: 50%;
+  font-weight: 100;
 }
