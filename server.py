@@ -44,4 +44,5 @@ def conflict():
 
 @app.route('/code-of-conduct')
 def coc():
-    return send_file("static/pdf/Cosy Polyamory Community - Code of Conduct.pdf")
+    return render_template("/code-of-conduct.html", page="docs")
+
