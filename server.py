@@ -46,3 +46,7 @@ def conflict():
 def coc():
     return render_template("/code-of-conduct.html", page="docs")
 
+@app.route('/events-guide')
+def eventsGuide():
+    return render_template("/events-guide.html", page="docs")
+
