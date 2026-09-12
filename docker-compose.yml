@@ -12,10 +12,11 @@ services:
     volumes:
       - cosypolyamory:/data
     environment:
-      - VIRTUAL_HOST=cosypolyamory.org
-      - LETSENCRYPT_HOST=cosypolyamory.org
-      - LETSENCRYPT_EMAIL=mayhem@gmail.com
+      - VIRTUAL_HOST=${VIRTUAL_HOST:-cosypolyamory.org}
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST:-cosypolyamory.org}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL:-mayhem@gmail.com}
       - DATABASE_PATH=/data/cosypolyamory.db
+      - UWSGI_PROCESSES=${UWSGI_PROCESSES:-8}
     command: ["/code/cosypolyamory.org/docker_startup.sh"]
 
   reminders:
